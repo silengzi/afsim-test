@@ -1,0 +1,27 @@
+2026-03-27 10:06:37 file D:/application/afsim2.9_src/demos/new_guidance/new_guidance1.txt
+2026-03-27 10:06:37 version wsf 2.9.0
+2026-03-27 10:06:37 file D:\application\afsim2.9_src\demos\new_guidance\new_guidance1.txt
+2026-03-27 10:06:37 file D:\application\afsim2.9_src\demos\new_guidance\setup.txt
+2026-03-27 10:06:37 file D:\application\afsim2.9_src\demos\new_guidance\event_pipe.txt
+2026-03-27 10:06:37 file D:\application\afsim2.9_src\demos\new_guidance\event_output.txt
+2026-03-27 10:06:37 file D:\application\afsim2.9_src\demos\new_guidance\terrain.txt
+2026-03-27 10:06:37 file D:\application\afsim2.9_src\demos\new_guidance\platforms/common.txt
+2026-03-27 10:06:37 file D:\application\afsim2.9_src\demos\new_guidance\platforms/missile_ship.txt
+2026-03-27 10:06:37 file D:/application/afsim2.9_src/demos/new_guidance/platforms/naval_ssm_tactics.txt
+2026-03-27 10:06:37 file D:/application/afsim2.9_src/demos/new_guidance/weapons/ssm/ssm_launch_computer.txt
+2026-03-27 10:06:37 file D:/application/afsim2.9_src/demos/new_guidance/weapons/ssm/ssm_missile_launch_computer.txt
+2026-03-27 10:06:37 file D:/application/afsim2.9_src/demos/new_guidance/platforms/announce_launch_tactics.txt
+2026-03-27 10:06:37 file D:/application/afsim2.9_src/demos/new_guidance/sensors/radar/sr_sam_fcr_1.txt
+2026-03-27 10:06:37 version $Id: sr_sam_fcr_1.txt,v 1.1.1.1 2009/03/27 20:42:31 m210650 Exp $
+2026-03-27 10:06:37 file D:/application/afsim2.9_src/demos/new_guidance/weapons/ssm/ssm_missile.txt
+2026-03-27 10:06:37 file D:/application/afsim2.9_src/demos/new_guidance/sensors/radar/red_missile_seeker.txt
+2026-03-27 10:06:37 file D:\application\afsim2.9_src\demos\new_guidance\platforms/red_naval_helicopter.txt
+2026-03-27 10:06:37 version $Id: red_naval_helicopter.txt,v 1.1.1.1 2009/03/27 20:42:31 m210650 Exp $
+2026-03-27 10:06:37 file D:/application/afsim2.9_src/demos/new_guidance/sensors/radar/helicopter_surface_search_radar_1.txt
+2026-03-27 10:06:37 version $Id: helicopter_surface_search_radar_1.txt,v 1.1.1.1 2009/03/27 20:42:31 m210650 Exp $
+2026-03-27 10:06:37 file D:/application/afsim2.9_src/demos/new_guidance/platforms/inflight_update_tactics.txt
+2026-03-27 10:06:37 file D:\application\afsim2.9_src\demos\new_guidance\scenarios/naval_ssm_test.txt
+2026-03-27 10:06:37 AER output file: output/new_guidance1.aer
+2026-03-27 10:06:37 Event output file: output/new_guidance1.evt
+2026-03-27 10:06:37 start 1
+2026-03-27 10:08:13 terminated 1562.500 96.174 144.375

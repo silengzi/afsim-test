@@ -1,0 +1,27 @@
+2026-03-27 09:42:53 file new_guidance1.txt
+2026-03-27 09:42:53 version wsf 2.9.0
+2026-03-27 09:42:53 file new_guidance1.txt
+2026-03-27 09:42:53 file setup.txt
+2026-03-27 09:42:53 file event_pipe.txt
+2026-03-27 09:42:53 file event_output.txt
+2026-03-27 09:42:53 file terrain.txt
+2026-03-27 09:42:53 file platforms/common.txt
+2026-03-27 09:42:53 file platforms/missile_ship.txt
+2026-03-27 09:42:53 file ./platforms/naval_ssm_tactics.txt
+2026-03-27 09:42:53 file ./weapons/ssm/ssm_launch_computer.txt
+2026-03-27 09:42:53 file ./weapons/ssm/ssm_missile_launch_computer.txt
+2026-03-27 09:42:53 file ./platforms/announce_launch_tactics.txt
+2026-03-27 09:42:53 file ./sensors/radar/sr_sam_fcr_1.txt
+2026-03-27 09:42:53 version $Id: sr_sam_fcr_1.txt,v 1.1.1.1 2009/03/27 20:42:31 m210650 Exp $
+2026-03-27 09:42:53 file ./weapons/ssm/ssm_missile.txt
+2026-03-27 09:42:53 file ./sensors/radar/red_missile_seeker.txt
+2026-03-27 09:42:53 file platforms/red_naval_helicopter.txt
+2026-03-27 09:42:53 version $Id: red_naval_helicopter.txt,v 1.1.1.1 2009/03/27 20:42:31 m210650 Exp $
+2026-03-27 09:42:53 file ./sensors/radar/helicopter_surface_search_radar_1.txt
+2026-03-27 09:42:53 version $Id: helicopter_surface_search_radar_1.txt,v 1.1.1.1 2009/03/27 20:42:31 m210650 Exp $
+2026-03-27 09:42:53 file ./platforms/inflight_update_tactics.txt
+2026-03-27 09:42:53 file scenarios/naval_ssm_test.txt
+2026-03-27 09:42:53 AER output file: output/new_guidance1.aer
+2026-03-27 09:42:53 Event output file: output/new_guidance1.evt
+2026-03-27 09:42:53 start 1
+2026-03-27 09:42:53 complete 2160.001 0.287 0.563

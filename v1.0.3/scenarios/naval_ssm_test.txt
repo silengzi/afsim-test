@@ -1,0 +1,81 @@
+# ****************************************************************************
+# CUI
+#
+# The Advanced Framework for Simulation, Integration, and Modeling (AFSIM)
+#
+# The use, dissemination or disclosure of data in this file is subject to
+# limitation or restriction. See accompanying README and LICENSE for details.
+# ****************************************************************************
+# *   ******      UNCLASSIFIED        ******   *
+
+#platform red_naval_helicopter RED_NAVAL_HELICOPTER
+#   side blue
+#   commander 1201_missile_ship
+#   route
+#     position 30:34:12n 80:40:00w altitude 5000 ft agl
+#     speed 100 kts  heading 90 deg
+#     position 29:59:24n 81:14:36w altitude 5000 ft agl
+#   end_route
+#   icon Apache
+#end_platform
+
+platform 1201_missile_ship MISSILE_SHIP
+   side blue
+   commander SELF
+   route
+      position 22:18:00.10n 136:18:56.47e altitude 0 ft msl
+         speed 14 kts
+      position 19:39:27.10n 136:17:27.01e altitude 0 ft msl
+         speed 14 kts
+   end_route
+   icon Luzhou
+   heading 180 degrees
+end_platform
+
+
+platform_type MYCAR WSF_PLATFORM
+   side red
+   icon sa10_tel
+   
+   mover WSF_GROUND_MOVER
+   end_mover
+
+   weapon red_mrbm_2_1 RED_MRBM_1
+      quantity 5
+      maximum_request_count 5
+   end_weapon
+end_platform_type
+
+
+
+platform lieren_ship LIEREN_SHIP
+   side blue
+   position 20:30:34.30n 128:41:58.79e
+
+   commander 1201_missile_ship
+end_platform
+
+platform wuku_ship WUKU_SHIP
+   side blue
+   position 15:47:35.578n 127:33:32.901e
+   route
+      position 15:47:35.58n 127:33:32.90e altitude 0.00 ft agl
+         speed 500 mph
+      position 13:52:33.11n 127:33:36.71e altitude 0.00 ft agl
+         speed 500 mph
+   end_route
+   heading 180 degrees
+end_platform
+
+
+platform ddl MYCAR
+   radar_signature VEHICLE_RADAR_SIGNATURE
+   position 25:35:05.36n 119:44:30.29e altitude 0 ft msl
+   heading 0 deg
+
+   track platform wuku_ship end_track
+
+   execute at_time 480 s absolute
+      Weapon("red_mrbm_2_1").FireSalvo(MasterTrackList().TrackEntry(0), 1);
+   end_execute
+end_platform

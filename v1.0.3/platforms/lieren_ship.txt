@@ -1,0 +1,60 @@
+# ****************************************************************************
+# CUI
+#
+# The Advanced Framework for Simulation, Integration, and Modeling (AFSIM)
+#
+# The use, dissemination or disclosure of data in this file is subject to
+# limitation or restriction. See accompanying README and LICENSE for details.
+# ****************************************************************************
+
+#                               UNCLASSIFIED
+#
+# Made up missile ship with a radar and comm
+
+platform_type LIEREN_SHIP WSF_PLATFORM
+  icon jiangKai
+
+  radar_signature SHIP_RADAR_SIGNATURE
+
+  mover WSF_SURFACE_MOVER
+    maximum_speed  31 kts
+  end_mover
+
+   sensor acq ACQ_RADAR
+      on
+      ignore_same_side
+      processor data_mgr
+   end_sensor
+
+   comm datalink RED_DATALINK
+     network_name <local:slave>
+     internal_link data_mgr
+     internal_link inflight_update_mgr
+  end_comm
+
+  comm uplink_radio RED_DATALINK
+  end_comm
+
+  track_manager
+     filter FILTER_TACTICS end_filter
+
+     # required for inflight updates to work (as currently employed)
+     aux_data
+        string weapon_platform = "";
+     end_aux_data
+  end_track_manager
+
+  processor data_mgr RED_NAVAL_HELICOPTER_DATA_MGR
+    purge_interval      60 sec
+
+    report_to commander via datalink
+  end_processor
+
+  processor inflight_update_mgr INFLIGHT_UPDATE_TACTICS
+     on_initialize
+        UPLINK_COMM_NAME = "uplink_radio";
+        WEAPON_COMM_NAME = "uplink";
+     end_on_initialize
+  end_processor
+
+end_platform_type
